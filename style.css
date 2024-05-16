@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --usename-color:rgb(40, 97, 221);
+    --username-background: rgb(188, 207, 248);
+    padding: 3.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    align-items:center;
+    position: fixed;
+    display: flex;
+    gap: 10rem;
+}
+.logo{
+    height: 2.7rem;
+    padding-right: 10rem;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 5rem;
+}
+
+.username{
+    color: var(--usename-color);
+    background-color:var(--username-background);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.container{
+    display: flex;
+    padding-top: 10rem;
+    gap: 10rem;
+}
+
+h1{
+    color: darkgray;
+    font-size: 3rem;
+    padding-bottom: 0.1rem;
+}
+span{
+    color: rgb(117, 117, 245);
+}
+p{
+    color: darkgray;
+    padding-bottom: 1rem;
+}
+
+.book{
+    color: white;
+    background-color: var(--usename-color);
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3rem;
+    margin-left: 5rem;
+}
+
+.laundary{
+    height: 22rem;
+}
+@media (max-width:1024px) {
+    body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .navbar{
+        gap: 5rem;
+    }
+    .container{
+        gap:3rem;
+    }
+    ul{
+        gap:2.3rem;
+    }
+    .logo{
+        padding-right: 5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .book{
+        margin: 0;
+    }
+}
+@media(max-width:768px){
+    body{
+        padding-left: 1rem;
+        padding-right:1rem;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    ul{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
